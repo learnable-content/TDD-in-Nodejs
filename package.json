@@ -1,11 +1,10 @@
 {
   "devDependencies": {
-    "chai": "^3.5.0",
-    "chai-as-promised": "^6.0.0",
-    "nock": "^9.0.2",
-    "sinon": "^1.17.6"
+    "tap-spec": "^4.1.1",
+    "tape": "^4.6.3"
   },
-  "dependencies": {
-    "request": "^2.79.0"
+  "scripts": {
+    "test": "./node_modules/.bin/tape test/**/*-test.js | ./node_modules/.bin/tap-spec",
+    "test-watch" : "nodemon --exec \"./node_modules/.bin/tape test/**/*-test.js | ./node_modules/.bin/tap-spec\""
   }
 }
