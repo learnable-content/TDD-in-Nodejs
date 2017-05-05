@@ -1,0 +1,7 @@
+{
+  "extends": "hapi",
+  "rules": {
+    "strict": "off",
+    "indent": ["error", 2]
+  }
+}
