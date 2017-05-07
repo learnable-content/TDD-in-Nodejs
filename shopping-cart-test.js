@@ -1,4 +1,3 @@
-// let assert = require('assert');
 let { expect } = require('chai');
 let ShoppingCart = require('./shopping-cart');
 
@@ -10,7 +9,6 @@ describe('The shopping cart', () => {
       // act
       let subtotal = shoppingCart.subtotal;
       // assert
-      // assert.equal(subtotal, 0);
       expect(subtotal).to.equal(0);
     });
 
@@ -33,7 +31,6 @@ describe('The shopping cart', () => {
         }
       ]);
 
-      // assert.equal(shoppingCart.subtotal, 300);
       expect(shoppingCart.subtotal).to.equal(300);
     });
   });
